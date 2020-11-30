@@ -1,51 +1,5 @@
 const inputArray = ['kita', 'atik', 'tika', 'aku', 'kia', 'makan', 'kua']
 console.log('inputArray', inputArray)
-// function anagramWithAscii(arrayOfStrings) {
-
-//     let totalAsciiArray = [];
-//     for (let i = 0; i < arrayOfStrings.length; i++) {
-//         console.log(arrayOfStrings[i])
-//         let asciiAmount = 0;
-//         for (let j = 0; j < arrayOfStrings[i].length; j++) {
-//             // arrayOfStrings[i]   // kita  
-//             asciiAmount = asciiAmount + arrayOfStrings[i].charCodeAt(j)
-//             if (j === arrayOfStrings[i].length - 1) {
-//                 totalAsciiArray.push({ word: arrayOfStrings[i], asciiAmount })
-//             }  // 3 === 4 - 1
-//             // console.log({ i, j ,result: arrayOfStrings[i].charCodeAt(j), asciiAmount})
-//         }
-//     }
-//     console.log("🚀totalAsciiArray", totalAsciiArray)
-
-//     ////////////////////////////////////////////////
-
-//     // for (let i = 0; i < totalAsciiArray.length; i++) {
-//     //     for (let j = i + 1; j < totalAsciiArray.length; j++) {
-//     //         if (totalAsciiArray[i].asciiAmount < totalAsciiArray[j].asciiAmount) {
-//     //             let tempToBeSwapped = totalAsciiArray[i]
-//     //             totalAsciiArray[i] = totalAsciiArray[j]
-//     //             totalAsciiArray[j] = tempToBeSwapped
-//     //         }
-//     //     }
-//     // }
-//     // console.log('after sorted', totalAsciiArray)
-
-//     let uniqueObject = {}
-//     for (let i = 0; i < totalAsciiArray.length; i++) {
-//         if (!uniqueObject.hasOwnProperty(totalAsciiArray[i].asciiAmount)) {
-//             uniqueObject[totalAsciiArray[i].asciiAmount] = [totalAsciiArray[i].word]
-//         } else {
-//             uniqueObject[totalAsciiArray[i].asciiAmount].push(totalAsciiArray[i].word)
-//         }
-//     }
-
-//     return Object.values(uniqueObject)
-// }
-
-// console.log('anagramWithAscii', anagramWithAscii(inputArray))
-
-
-//////////////////////////////////////////////////
 
 // SUCCESS 95%
 function mySortFunction(string) {
@@ -77,6 +31,7 @@ function anagram(arrayOfStrings) {
 
 console.log('anagram()', anagram(inputArray))
 
+// SUCCESS 100% AS EXPECTED OUTPUT
 function superSortedAnagram(arrayOfArrays) {
     for (let i = 0; i < arrayOfArrays.length; i++) {
         for (let j = i+1; j < arrayOfArrays.length; j++) {
